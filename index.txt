@@ -1,0 +1,35 @@
+# create index
+PUT rec
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "brand": {
+          "type": "keyword"
+        },
+        "gender": {
+          "type": "keyword"
+        },
+        "price": {
+          "type": "float"
+        },
+        "name": {
+          "type": "text"
+        },
+        "desc": {
+          "type": "text"
+        },
+        "strong": {
+          "type": "text"
+        },
+        "features": {
+          "type": "text"
+        },
+        "purchased": {
+          "type": "integer",
+          "null_value": 0
+        }
+      }
+    }
+  }
+}
